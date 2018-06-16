@@ -252,7 +252,7 @@ class ViewController: UIViewController,UITableViewDelegate {
             setStudy(on: false)
             
         default:    // 想定外
-            print("Error!")
+            print("Error! What did you choose?")
         }
     }
     
