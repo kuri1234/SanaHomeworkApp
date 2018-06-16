@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82DFE3F20CACDF800F52BCE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DFE3E20CACDF800F52BCE /* CustomButton.swift */; };
 		C84EC0FE20C5891300CAC54E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EC0FD20C5891300CAC54E /* AppDelegate.swift */; };
 		C84EC10020C5891300CAC54E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EC0FF20C5891300CAC54E /* ViewController.swift */; };
 		C84EC10320C5891300CAC54E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84EC10120C5891300CAC54E /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		C84EC10820C5891500CAC54E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84EC10620C5891500CAC54E /* LaunchScreen.storyboard */; };
 		C84EC11320C5891600CAC54E /* SanaHomeworkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EC11220C5891600CAC54E /* SanaHomeworkAppTests.swift */; };
 		C84EC11E20C5891600CAC54E /* SanaHomeworkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EC11D20C5891600CAC54E /* SanaHomeworkAppUITests.swift */; };
+		C8DCD57720C6D145003899B7 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8DCD57620C6D144003899B7 /* wallpaper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C82DFE3E20CACDF800F52BCE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C84EC0FA20C5891300CAC54E /* SanaHomeworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaHomeworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84EC0FD20C5891300CAC54E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C84EC0FF20C5891300CAC54E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		C84EC11920C5891600CAC54E /* SanaHomeworkAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanaHomeworkAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84EC11D20C5891600CAC54E /* SanaHomeworkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaHomeworkAppUITests.swift; sourceTree = "<group>"; };
 		C84EC11F20C5891600CAC54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8DCD57620C6D144003899B7 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper.jpg; path = Assets.xcassets/wallpaper.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				C84EC0FD20C5891300CAC54E /* AppDelegate.swift */,
 				C84EC0FF20C5891300CAC54E /* ViewController.swift */,
 				C84EC10120C5891300CAC54E /* Main.storyboard */,
+				C8DCD57620C6D144003899B7 /* wallpaper.jpg */,
 				C84EC10420C5891500CAC54E /* Assets.xcassets */,
 				C84EC10620C5891500CAC54E /* LaunchScreen.storyboard */,
 				C84EC10920C5891500CAC54E /* Info.plist */,
+				C82DFE3E20CACDF800F52BCE /* CustomButton.swift */,
 			);
 			path = SanaHomeworkApp;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DCD57720C6D145003899B7 /* wallpaper.jpg in Resources */,
 				C84EC10820C5891500CAC54E /* LaunchScreen.storyboard in Resources */,
 				C84EC10520C5891500CAC54E /* Assets.xcassets in Resources */,
 				C84EC10320C5891300CAC54E /* Main.storyboard in Resources */,
@@ -258,6 +265,7 @@
 			files = (
 				C84EC10020C5891300CAC54E /* ViewController.swift in Sources */,
 				C84EC0FE20C5891300CAC54E /* AppDelegate.swift in Sources */,
+				C82DFE3F20CACDF800F52BCE /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
