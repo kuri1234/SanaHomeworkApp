@@ -340,7 +340,7 @@ class ViewController: UIViewController,UITableViewDelegate {
             buttonStart.setTitle("しゅくだい中...", for: .normal)
             buttonStart.setTitleColor(UIColor.red, for: .normal)
             timer = Timer.scheduledTimer(
-                timeInterval: 1,
+                timeInterval: 60,
                 target: self,
                 selector: #selector(self.timerCounter),
                 userInfo: nil,
@@ -372,7 +372,7 @@ class ViewController: UIViewController,UITableViewDelegate {
         let currentTime = Date().timeIntervalSince(time1)
         // fmod() 余りを計算
         let hour = (Int)(fmod((currentTime/3600), 24))
-        let minute = (Int)(fmod((currentTime), 60))
+        let minute = (Int)(fmod((currentTime/60), 60))
         //        let sec = (Int)(fmod(currentTime,60))
         
         // %02d： ２桁表示、0で埋める
