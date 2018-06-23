@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CC1D8BE6D4DB44FBB7F3C0 /* Pods_SanaHomeworkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC5302A140594C650F47188 /* Pods_SanaHomeworkAppUITests.framework */; };
+		3BD664135311CDDEF8742D91 /* Pods_SanaHomeworkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439EA6B3F88DD60182325019 /* Pods_SanaHomeworkAppTests.framework */; };
+		5179E4FC182642DB2F567B8E /* Pods_SanaHomeworkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E56D3B2A6973AF90B6B095 /* Pods_SanaHomeworkApp.framework */; };
+		C80DD73120D540DA009740A3 /* RealmSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80DD73020D540DA009740A3 /* RealmSwift.swift */; };
 		C82DFE3F20CACDF800F52BCE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DFE3E20CACDF800F52BCE /* CustomButton.swift */; };
 		C84EC0FE20C5891300CAC54E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EC0FD20C5891300CAC54E /* AppDelegate.swift */; };
 		C84EC10020C5891300CAC54E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EC0FF20C5891300CAC54E /* ViewController.swift */; };
@@ -36,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E56D3B2A6973AF90B6B095 /* Pods_SanaHomeworkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaHomeworkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D97AFA7B412FCBF999DD109 /* Pods-SanaHomeworkAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanaHomeworkAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SanaHomeworkAppTests/Pods-SanaHomeworkAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0E82467E06BA9458311DA8FF /* Pods-SanaHomeworkAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanaHomeworkAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SanaHomeworkAppUITests/Pods-SanaHomeworkAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DC5302A140594C650F47188 /* Pods_SanaHomeworkAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaHomeworkAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9BB39A6570E51271F8055E /* Pods-SanaHomeworkAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanaHomeworkAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SanaHomeworkAppTests/Pods-SanaHomeworkAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		439EA6B3F88DD60182325019 /* Pods_SanaHomeworkAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaHomeworkAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B7DECD26C6652BCA2DA5E9 /* Pods-SanaHomeworkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanaHomeworkApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SanaHomeworkApp/Pods-SanaHomeworkApp.release.xcconfig"; sourceTree = "<group>"; };
+		C7DF0D1C28A873444EA54458 /* Pods-SanaHomeworkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanaHomeworkApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SanaHomeworkApp/Pods-SanaHomeworkApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C80DD73020D540DA009740A3 /* RealmSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSwift.swift; sourceTree = "<group>"; };
 		C82DFE3E20CACDF800F52BCE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C84EC0FA20C5891300CAC54E /* SanaHomeworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaHomeworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84EC0FD20C5891300CAC54E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		C84EC11D20C5891600CAC54E /* SanaHomeworkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaHomeworkAppUITests.swift; sourceTree = "<group>"; };
 		C84EC11F20C5891600CAC54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8DCD57620C6D144003899B7 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wallpaper.jpg; path = Assets.xcassets/wallpaper.jpg; sourceTree = "<group>"; };
+		FCDF92F83CC3A1327F6CC59C /* Pods-SanaHomeworkAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanaHomeworkAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SanaHomeworkAppUITests/Pods-SanaHomeworkAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5179E4FC182642DB2F567B8E /* Pods_SanaHomeworkApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD664135311CDDEF8742D91 /* Pods_SanaHomeworkAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CC1D8BE6D4DB44FBB7F3C0 /* Pods_SanaHomeworkAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03AFE092573A881D0837027F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E56D3B2A6973AF90B6B095 /* Pods_SanaHomeworkApp.framework */,
+				439EA6B3F88DD60182325019 /* Pods_SanaHomeworkAppTests.framework */,
+				1DC5302A140594C650F47188 /* Pods_SanaHomeworkAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7375213E77AE239957D3ADC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF0D1C28A873444EA54458 /* Pods-SanaHomeworkApp.debug.xcconfig */,
+				B8B7DECD26C6652BCA2DA5E9 /* Pods-SanaHomeworkApp.release.xcconfig */,
+				2C9BB39A6570E51271F8055E /* Pods-SanaHomeworkAppTests.debug.xcconfig */,
+				0D97AFA7B412FCBF999DD109 /* Pods-SanaHomeworkAppTests.release.xcconfig */,
+				0E82467E06BA9458311DA8FF /* Pods-SanaHomeworkAppUITests.debug.xcconfig */,
+				FCDF92F83CC3A1327F6CC59C /* Pods-SanaHomeworkAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C84EC0F120C5891300CAC54E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				C84EC11120C5891600CAC54E /* SanaHomeworkAppTests */,
 				C84EC11C20C5891600CAC54E /* SanaHomeworkAppUITests */,
 				C84EC0FB20C5891300CAC54E /* Products */,
+				7375213E77AE239957D3ADC2 /* Pods */,
+				03AFE092573A881D0837027F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +151,7 @@
 				C84EC10620C5891500CAC54E /* LaunchScreen.storyboard */,
 				C84EC10920C5891500CAC54E /* Info.plist */,
 				C82DFE3E20CACDF800F52BCE /* CustomButton.swift */,
+				C80DD73020D540DA009740A3 /* RealmSwift.swift */,
 			);
 			path = SanaHomeworkApp;
 			sourceTree = "<group>";
@@ -138,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C84EC12220C5891600CAC54E /* Build configuration list for PBXNativeTarget "SanaHomeworkApp" */;
 			buildPhases = (
+				86FB86A630E2603941508548 /* [CP] Check Pods Manifest.lock */,
 				C84EC0F620C5891300CAC54E /* Sources */,
 				C84EC0F720C5891300CAC54E /* Frameworks */,
 				C84EC0F820C5891300CAC54E /* Resources */,
+				8384CEF31BFDB1051E7E9464 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C84EC12520C5891600CAC54E /* Build configuration list for PBXNativeTarget "SanaHomeworkAppTests" */;
 			buildPhases = (
+				BB8A7A2253D3646B6A793E0D /* [CP] Check Pods Manifest.lock */,
 				C84EC10A20C5891600CAC54E /* Sources */,
 				C84EC10B20C5891600CAC54E /* Frameworks */,
 				C84EC10C20C5891600CAC54E /* Resources */,
+				089F70F2996454796DD7A9D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C84EC12820C5891600CAC54E /* Build configuration list for PBXNativeTarget "SanaHomeworkAppUITests" */;
 			buildPhases = (
+				51EB540CD2FD2D897BFCBAA7 /* [CP] Check Pods Manifest.lock */,
 				C84EC11520C5891600CAC54E /* Sources */,
 				C84EC11620C5891600CAC54E /* Frameworks */,
 				C84EC11720C5891600CAC54E /* Resources */,
+				582C904445E1E2154430328F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,12 +307,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		089F70F2996454796DD7A9D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SanaHomeworkAppTests/Pods-SanaHomeworkAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SanaHomeworkAppTests/Pods-SanaHomeworkAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51EB540CD2FD2D897BFCBAA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SanaHomeworkAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		582C904445E1E2154430328F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SanaHomeworkAppUITests/Pods-SanaHomeworkAppUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SanaHomeworkAppUITests/Pods-SanaHomeworkAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8384CEF31BFDB1051E7E9464 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SanaHomeworkApp/Pods-SanaHomeworkApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SanaHomeworkApp/Pods-SanaHomeworkApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86FB86A630E2603941508548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SanaHomeworkApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8A7A2253D3646B6A793E0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SanaHomeworkAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C84EC0F620C5891300CAC54E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C84EC10020C5891300CAC54E /* ViewController.swift in Sources */,
+				C80DD73120D540DA009740A3 /* RealmSwift.swift in Sources */,
 				C84EC0FE20C5891300CAC54E /* AppDelegate.swift in Sources */,
 				C82DFE3F20CACDF800F52BCE /* CustomButton.swift in Sources */,
 			);
@@ -436,6 +603,7 @@
 		};
 		C84EC12320C5891600CAC54E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DF0D1C28A873444EA54458 /* Pods-SanaHomeworkApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +622,7 @@
 		};
 		C84EC12420C5891600CAC54E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B7DECD26C6652BCA2DA5E9 /* Pods-SanaHomeworkApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +641,7 @@
 		};
 		C84EC12620C5891600CAC54E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9BB39A6570E51271F8055E /* Pods-SanaHomeworkAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +663,7 @@
 		};
 		C84EC12720C5891600CAC54E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D97AFA7B412FCBF999DD109 /* Pods-SanaHomeworkAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +685,7 @@
 		};
 		C84EC12920C5891600CAC54E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E82467E06BA9458311DA8FF /* Pods-SanaHomeworkAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +706,7 @@
 		};
 		C84EC12A20C5891600CAC54E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDF92F83CC3A1327F6CC59C /* Pods-SanaHomeworkAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
