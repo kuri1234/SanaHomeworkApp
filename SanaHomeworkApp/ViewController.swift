@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate {
 
-    // 連絡ノート
+    // 連絡ノート (deprecated)
     func setRenraku(on: Bool) {
         if( on ) {
             labelRenraku.text = "OK"
@@ -24,12 +24,39 @@ class ViewController: UIViewController,UITableViewDelegate {
     @IBAction func switchRenraku(_ sender: Any) {
         setRenraku( on: buttonRenraku.isOn )
     }
-    
+
+    // 時刻を受けて"何時何分"を返す
+    func showTime( time: Date ) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH時mm分"
+        let string = formatter.string(from: time as Date)
+        return string
+    }
+
+    @IBOutlet weak var stackviewWeekday: UIStackView!
+    @IBOutlet weak var labelWeekdayFinishTime: UILabel!
+    @IBOutlet weak var labelWeekdayFinishDuration: UILabel!
+
+    // "平日だけ"が終わってたら時間を記録して表示
+    func isWeekdayFinish() {
+        if( buttonPrint.isOn && buttonKando.isOn && indicatorHomework.isAnimating) {
+            // 現在時刻を表示
+            labelWeekdayFinishTime.text = showTime(time: Date())
+            // 直前のラップタイムからの時間を表示
+            labelWeekdayFinishDuration.text = calcTimeDiff(time1: arrayRapTime[arrayRapTime.count-1])
+            // 現在時刻をラップタイムとして記録
+            arrayRapTime.append( Date() )
+            // Labelを再表示
+            stackviewWeekday.isHidden = false
+        }
+        
+    }
     // プリント
     func setPrint(on: Bool) {
         if( on ) {
             labelPrint.text = "OK"
             labelPrint.textColor = UIColor.black
+            isWeekdayFinish()
         } else {
             labelPrint.text = "まだ！"
             labelPrint.textColor = UIColor.red
@@ -39,27 +66,13 @@ class ViewController: UIViewController,UITableViewDelegate {
     @IBAction func switchPrint(_ sender: Any) {
         setPrint(on: buttonPrint.isOn)
     }
-    
-    // けいさんカード
-    func setCalc(on: Bool) {
-        if( on ) {
-            labelCalc.text = "OK"
-            labelCalc.textColor = UIColor.black
-        } else {
-            labelCalc.text = "まだ！"
-            labelCalc.textColor = UIColor.red
-        }
-    }
-    @IBOutlet weak var labelCalc: UILabel!
-    @IBAction func switchCalc(_ sender: Any) {
-        setCalc(on: buttonCalc.isOn)
-    }
 
-    // かんド
+    // (かんド改め)ドリル
     func setKando(on: Bool) {
         if( on ) {
             labelKando.text = "OK"
             labelKando.textColor = UIColor.black
+            isWeekdayFinish()
         } else {
             labelKando.text = "まだ！"
             labelKando.textColor = UIColor.red
@@ -69,12 +82,49 @@ class ViewController: UIViewController,UITableViewDelegate {
     @IBAction func switchKando(_ sender: Any) {
         setKando(on: buttonKando.isOn)
     }
+
+    
+    @IBOutlet weak var stackviewEveryday: UIStackView!
+    @IBOutlet weak var labelEverydayFinishTime: UILabel!
+    @IBOutlet weak var labelEverydayFinishDuration: UILabel!
+
+    // "毎日"が終わってたら時間を記録して表示
+    func isEverydayFinish() {
+        if( buttonOndoku.isOn && buttonCalc.isOn && buttonSitup.isOn && indicatorHomework.isAnimating) {
+            // 現在時刻を表示
+            labelEverydayFinishTime.text = showTime(time: Date())
+            // 直前のラップタイムからの時間を表示
+            labelEverydayFinishDuration.text = calcTimeDiff(time1: arrayRapTime[arrayRapTime.count-1])
+            // 現在時刻をラップタイムとして記録
+            arrayRapTime.append( Date() )
+            // Labelを再表示
+            stackviewEveryday.isHidden = false
+        }
+        
+    }
+
+    // けいさんカード
+    func setCalc(on: Bool) {
+        if( on ) {
+            labelCalc.text = "OK"
+            labelCalc.textColor = UIColor.black
+            isEverydayFinish()
+        } else {
+            labelCalc.text = "まだ！"
+            labelCalc.textColor = UIColor.red
+        }
+    }
+    @IBOutlet weak var labelCalc: UILabel!
+    @IBAction func switchCalc(_ sender: Any) {
+        setCalc(on: buttonCalc.isOn)
+    }
     
     // 音読
     func setOndoku(on: Bool) {
         if( on ) {
             labelOndoku.text = "OK"
             labelOndoku.textColor = UIColor.black
+            isEverydayFinish()
         } else {
             labelOndoku.text = "まだ！"
             labelOndoku.textColor = UIColor.red
@@ -90,6 +140,7 @@ class ViewController: UIViewController,UITableViewDelegate {
         if( on ) {
             labelSitup.text = "OK"
             labelSitup.textColor = UIColor.black
+            isEverydayFinish()
         } else {
             labelSitup.text = "まだ！"
             labelSitup.textColor = UIColor.red
@@ -100,11 +151,32 @@ class ViewController: UIViewController,UITableViewDelegate {
         setSitup(on: buttonSitup.isOn)
     }
     
+
+    @IBOutlet weak var stackviewPrep: UIStackView!
+    @IBOutlet weak var labelPrepFinishTime: UILabel!
+    @IBOutlet weak var labelPrepFinishDuration: UILabel!
+    
+    // "明日の用意"が終わってたら時間を記録して表示
+    func isPrepFinish() {
+        if( buttonPrep.isOn && indicatorHomework.isAnimating) {
+            // 現在時刻を表示
+            labelPrepFinishTime.text = showTime(time: Date())
+            // 直前のラップタイムからの時間を表示
+            labelPrepFinishDuration.text = calcTimeDiff(time1: arrayRapTime[arrayRapTime.count-1])
+            // 現在時刻をラップタイムとして記録
+            arrayRapTime.append( Date() )
+            // Labelを再表示
+            stackviewPrep.isHidden = false
+        }
+        
+    }
+
     // 明日の用意
     func setPrep(on: Bool) {
         if( on ) {
             labelPrep.text = "OK"
             labelPrep.textColor = UIColor.black
+            isPrepFinish()
         } else {
             labelPrep.text = "まだ！"
             labelPrep.textColor = UIColor.red
@@ -148,7 +220,6 @@ class ViewController: UIViewController,UITableViewDelegate {
     @IBOutlet weak var buttonRenraku: UISwitch!
     @IBOutlet weak var buttonPrint: UISwitch!
     @IBOutlet weak var buttonCalc: UISwitch!
-    @IBOutlet weak var buttonKeido: UISwitch!
     @IBOutlet weak var buttonKando: UISwitch!
     @IBOutlet weak var buttonOndoku: UISwitch!
     @IBOutlet weak var buttonSitup: UISwitch!
@@ -157,10 +228,11 @@ class ViewController: UIViewController,UITableViewDelegate {
     @IBOutlet weak var buttonStudy: UISwitch!
 
     @IBOutlet weak var labelTime: UILabel!
+    @IBOutlet weak var labelStartTime: UILabel!
     
     weak var timer: Timer!
     var startTime = Date()
-    
+    var arrayRapTime: [Date] = []
 
     // 曜日選択
     @IBAction func selectDay(_ sender: UISegmentedControl) {
@@ -259,8 +331,7 @@ class ViewController: UIViewController,UITableViewDelegate {
     @IBOutlet weak var buttonStart: RoundedButton!
     @IBOutlet weak var indicatorHomework: UIActivityIndicatorView!
     
-    
-    // タイマースタート
+    // タイマースタート・ストップ
     @IBAction func resetAll(_ sender: Any) {
         
         if timer == nil{
@@ -269,13 +340,15 @@ class ViewController: UIViewController,UITableViewDelegate {
             buttonStart.setTitle("しゅくだい中...", for: .normal)
             buttonStart.setTitleColor(UIColor.red, for: .normal)
             timer = Timer.scheduledTimer(
-                timeInterval: 60,
+                timeInterval: 1,
                 target: self,
                 selector: #selector(self.timerCounter),
                 userInfo: nil,
                 repeats: true)
-            // スタートした後の時間を覚えとく
+            // スタートした後の時間を覚えて表示もする
             startTime = Date()
+            labelStartTime.text = showTime(time: startTime)
+            arrayRapTime.append(startTime)  // ラップタイムの1つ目は開始時刻
             // 測定中を表示
             indicatorHomework.startAnimating()
         } else {
@@ -283,28 +356,36 @@ class ViewController: UIViewController,UITableViewDelegate {
             timer.invalidate()
             buttonStart.setTitle("しゅくだいはじめ！", for: .normal)
             buttonStart.setTitleColor(UIColor.black, for: .normal)
-            // 測定中を表示
+            // 測定ストップ
             indicatorHomework.stopAnimating()
+            // 記録した時間を非表示に
+            stackviewWeekday.isHidden = true
+            stackviewEveryday.isHidden = true
+            stackviewPrep.isHidden = true
         }
 
     }
     
-    @objc func timerCounter() {
-        // タイマー開始からのインターバル時間(sec)
-        let currentTime = Date().timeIntervalSince(startTime)
-        
+    // 入力された時刻から現在までの時間を"**時**分"で返す
+    func calcTimeDiff(time1: Date) -> String {
+        // 入力時間から現在までの時間
+        let currentTime = Date().timeIntervalSince(time1)
         // fmod() 余りを計算
         let hour = (Int)(fmod((currentTime/3600), 24))
-        let minute = (Int)(fmod((currentTime/60), 60))
-//        let sec = (Int)(fmod(currentTime,60))
-
+        let minute = (Int)(fmod((currentTime), 60))
+        //        let sec = (Int)(fmod(currentTime,60))
+        
         // %02d： ２桁表示、0で埋める
         let sHour  = String(format:"%02d", hour)
         let sMinute = String(format:"%02d", minute)
-//        let sSec = String(format:"%02d", sec)
+        //        let sSec = String(format:"%02d", sec)
+        
+        return sHour+"時間"+sMinute+"分"
+    }
 
-        labelTime.text = sHour+"時間"+sMinute+"分"
+    @objc func timerCounter() {
 
+        labelTime.text = calcTimeDiff(time1: startTime)
     }
 
     override func viewDidLoad() {

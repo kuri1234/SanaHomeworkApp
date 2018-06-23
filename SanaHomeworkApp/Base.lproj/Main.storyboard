@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-5v-GOL" userLabel="曜日設定">
-                                <rect key="frame" x="24" y="112" width="305" height="28"/>
+                                <rect key="frame" x="24" y="92" width="305" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="今日は何曜日？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dh-FG-7OY">
@@ -50,7 +50,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ6-s0-VTY" userLabel="スタート！" customClass="RoundedButton" customModule="SanaHomeworkApp" customModuleProvider="target">
-                                <rect key="frame" x="52" y="148" width="237" height="35"/>
+                                <rect key="frame" x="47" y="130" width="176" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.73356988029028325" green="1" blue="0.99934172973991164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
@@ -72,11 +72,6 @@
                                     <action selector="resetAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwv-p6-z1V"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hVm-0u-zDX">
-                                <rect key="frame" x="236" y="146" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" red="1" green="0.62982491399979801" blue="0.9482231671189475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USy-Lv-xI1" userLabel="全体時間">
                                 <rect key="frame" x="5" y="201" width="325.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -159,7 +154,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ths-rf-OMh" userLabel="平日だけ時間">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ths-rf-OMh" userLabel="平日だけ時間">
                                 <rect key="frame" x="5" y="299" width="342.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -264,7 +259,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73g-Vc-NKi" userLabel="毎日時間">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73g-Vc-NKi" userLabel="毎日時間">
                                 <rect key="frame" x="8" y="428" width="342.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -318,7 +313,7 @@
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7C-uD-Pd1" userLabel="明日の用意時間">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7C-uD-Pd1" userLabel="明日の用意時間">
                                 <rect key="frame" x="5" y="495" width="342.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -425,6 +420,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hVm-0u-zDX">
+                                <rect key="frame" x="231" y="130" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="1" green="0.62982491399979801" blue="0.9482231671189475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -442,15 +442,25 @@
                         <outlet property="buttonStudy" destination="Gb5-NQ-ROu" id="DWm-XI-Dry"/>
                         <outlet property="indicatorHomework" destination="hVm-0u-zDX" id="Lju-vZ-FuH"/>
                         <outlet property="labelCalc" destination="1fK-kR-XlS" id="eNX-t7-J5L"/>
+                        <outlet property="labelEverydayFinishDuration" destination="6bT-cb-rnK" id="D9u-hc-9dU"/>
+                        <outlet property="labelEverydayFinishTime" destination="zBi-XR-4Y9" id="YhQ-lD-5D7"/>
                         <outlet property="labelKando" destination="ADJ-h3-5Nn" id="rgu-bS-KmO"/>
                         <outlet property="labelOndoku" destination="fBU-PV-arb" id="Pv5-9h-Y1I"/>
                         <outlet property="labelPrep" destination="rLQ-9r-DU9" id="J3G-ba-QQy"/>
+                        <outlet property="labelPrepFinishDuration" destination="E54-g9-cK5" id="Dpu-Ex-q8n"/>
+                        <outlet property="labelPrepFinishTime" destination="cly-la-oaL" id="dz4-G7-1NM"/>
                         <outlet property="labelPrint" destination="3uH-bb-etO" id="jsq-pk-HVP"/>
                         <outlet property="labelRead" destination="oq2-xM-vSH" id="mfE-Vl-tcI"/>
                         <outlet property="labelRenraku" destination="FBQ-YL-yg1" id="F9V-jp-3MW"/>
                         <outlet property="labelSitup" destination="Gqy-XF-dRB" id="4t3-T6-5z2"/>
+                        <outlet property="labelStartTime" destination="nnz-05-gSE" id="Drn-2u-pRT"/>
                         <outlet property="labelStudy" destination="TdV-SA-MKW" id="6qB-Ko-FjJ"/>
                         <outlet property="labelTime" destination="Yci-So-y4v" id="wio-CY-72c"/>
+                        <outlet property="labelWeekdayFinishDuration" destination="WxD-F4-xv7" id="hwo-kc-mwJ"/>
+                        <outlet property="labelWeekdayFinishTime" destination="LdK-iU-kXv" id="8BS-qW-8Yh"/>
+                        <outlet property="stackviewEveryday" destination="73g-Vc-NKi" id="EMC-o5-yht"/>
+                        <outlet property="stackviewPrep" destination="i7C-uD-Pd1" id="1xa-r5-gjk"/>
+                        <outlet property="stackviewWeekday" destination="Ths-rf-OMh" id="OWq-oK-aNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
